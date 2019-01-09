@@ -3,9 +3,10 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Brammeier.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -30,8 +31,10 @@ def double_a_float():
          Enter a number: -3.14
          -6.28
     """
+    x = float(input('Put your float here '))
+    print(x * 2)
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
@@ -61,8 +64,11 @@ def print_an_integer_many_times():
          10
          10
     """
+    x = int(input('Put a positive integer here '))
+    for k in range(x):
+        print(x * 2)
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
@@ -80,8 +86,10 @@ def print_an_integer_many_times_on_one_row():
          Enter an integer: 5
          1010101010
     """
+    x = int(input('Put another positive integer here '))
+    print(x * str(x))
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
@@ -120,8 +128,16 @@ def input_it_all():
          Peace & Love.
          Peace & Love.
     """
+    f = float(input('Put your float here '))
+    p = int(input('Put a positive integer here '))
+    s = str(input('Put a nice message here '))
+
+    for k in range(p):
+        print(math.sqrt(f))
+    for k in range(p):
+        print(s)
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
