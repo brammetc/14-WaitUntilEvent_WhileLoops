@@ -30,8 +30,8 @@ Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Tanner Brammeier.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 
@@ -39,9 +39,9 @@ import math
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_until_prime_input()
-    run_test_next_prime()
-    run_test_prime_gap()
-    run_test_wait_for_sum_of_cubes()
+    # run_test_next_prime()
+    # run_test_prime_gap()
+    # run_test_wait_for_sum_of_cubes()
 
 
 def is_prime(n):
@@ -98,8 +98,17 @@ def sum_until_prime_input():
          Enter an integer greater than 1: 11
          The sum of the input integers is: 167
     """
+    total = 0
+    while True:
+        x = int(input('Put an integer > 1 '))
+        total = total + x
+        if is_prime(x) is True:
+            print(total)
+            break
+
+
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
